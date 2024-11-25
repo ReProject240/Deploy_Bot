@@ -35,19 +35,5 @@ palabras_prohibidas = [
     "tarado",
     "verga",
     "vrg",
-    "zorra",
+    "zorra"
 ]
-"""
-while True:
-    word = input("ingrese la palabra: ")
-    if word == "1":
-        break
-    if word not in palabras_prohibidas:
-        palabras_prohibidas.append(word)
-    else:
-        print("ya se encuentra")
-
-
-palabras_prohibidas = sorted(palabras_prohibidas)
-for i in (palabras_prohibidas):
-    print(f'"{i}",') """
