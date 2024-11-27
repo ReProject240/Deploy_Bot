@@ -107,7 +107,7 @@ def avisar(cid, uid, nombre, palabra_ofensiva):
         with open(f'{Dic_avisos["avisos"]}/{cid}_{uid}', "w", encoding="utf-8") as f:
             f.write(f'{avisos}\n{nombre}')
     else:
-        fin_ban = datetime.now() + timedelta(minutes=15) # fecha que finaliza el baneo/ después de esto el usuario puede volver a entrar en el grupo
+        fin_ban = datetime.now() + timedelta(seconds=10) # fecha que finaliza el baneo/ después de esto el usuario puede volver a entrar en el grupo
         try: # banear al usuario
             bot.ban_chat_member(cid, uid, until_date = fin_ban)
         except telebot.apihelper.ApiTelegramException as e: #el try except controla que el creador no sea eliminado del grupo
